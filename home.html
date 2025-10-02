@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <h1>Let Us Get to Know You Better!</h1>
+                <p>Submit your personal information to win a trip for 2 to a week-long vacation in Iceland!</p>
+                <a href="https://www.tripadvisor.ca/Tourism-g189970-Reykjavik_Capital_Region-Vacations.html">More About Iceland.</a>
+                <h2>Fill in the Form!</h2>
+
+                <form action="http://localhost:8080/user_info" method="post" id="form" class="form" enctype="multipart/form-data">
+                    <input type="text" placeholder="User Name" name="u_name" required />
+                    <input type="number" placeholder="User Age" name="u_age" min="1" required />
+                    <input type="text" placeholder="Car Model" name="u_car" required />
+                    <input type="text" placeholder="Favourite Color" name="u_color" required />
+                    <input type="submit" class="button" value="Send!" onclick="validateForm();">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
